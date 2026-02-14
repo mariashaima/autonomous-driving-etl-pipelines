@@ -1,10 +1,10 @@
-🚗 Autonomous Driving Data Pipelines
+**🚗 Autonomous Driving Data Pipelines**
 
 Industry-grade ETL (Extract–Transform–Load) pipelines for perception and multi-sensor research in autonomous systems.
 
 Designed for scalable, reproducible, and production-ready preprocessing of multi-modal sensor data including camera, LiDAR, and trajectory annotations.
 
-📌 Overview
+**📌 Overview**
 
 Modern autonomous systems rely on structured, validated, and synchronized multi-sensor data.
 This repository provides modular and extensible data pipelines that convert raw sensor streams into machine learning–ready tensors.
@@ -23,7 +23,7 @@ Dockerized execution
 
 Dataset-agnostic design
 
-🎯 Supported Research Domains
+**🎯 Supported Research Domains**
 1️⃣ Object Detection
 
 Image preprocessing
@@ -54,18 +54,9 @@ Calibration-based LiDAR → Camera projection
 
 Multi-modal tensor preparation
 
-🏗 Architecture
-src/
-├── pipelines/
-│   ├── base_pipeline.py
-│   ├── object_detection_pipeline.py
-│   ├── trajectory_pipeline.py
-│   └── sensor_fusion_pipeline.py
-│
-├── utils/
-│   ├── calibration.py
-│   ├── logging.py
-│   └── validation.py
+**🏗 Architecture**
+
+<img width="255" height="231" alt="image" src="https://github.com/user-attachments/assets/cd4a7d8c-81c9-4b41-92b4-89ea02e0c42f" />
 
 Design Principles
 
@@ -99,7 +90,7 @@ Dataset switching without code modification
 
 CI-based regression testing
 
-🧪 Testing
+**🧪 Testing**
 
 Unit tests validate:
 
@@ -115,7 +106,7 @@ Run tests with:
 
 pytest tests/
 
-🐳 Docker Support
+**🐳 Docker Support**
 
 The project is containerized for reproducible deployment.
 
@@ -128,11 +119,11 @@ Run container:
 
 docker run autonomous-driving-pipelines
 
-📊 Dataset Compatibility
+**📊 Dataset Compatibility**
 
 The pipeline design supports integration with:
 
-KITTI (Detection & Tracking)
+**KITTI (Detection & Tracking)**
 
 nuScenes
 
@@ -142,7 +133,7 @@ Simulation outputs (CARLA, MetaDrive)
 
 Dataset-specific adapters can be implemented without modifying core pipeline logic.
 
-🚀 Example Usage
+**🚀 Example Usage**
 from src.pipelines.object_detection_pipeline import ObjectDetectionPipeline
 
 config = {"image_size": [640, 384]}
@@ -152,7 +143,7 @@ output = pipeline.run(image)
 
 print(output.shape)
 
-🔒 Engineering Standards
+**🔒 Engineering Standards**
 
 This repository follows industry software engineering practices:
 
@@ -170,7 +161,7 @@ Modular architecture
 
 Clear separation between data logic and ML logic
 
-📈 Applications
+**📈 Applications**
 
 ADAS perception validation
 
@@ -184,7 +175,7 @@ Multi-Agent Reinforcement Learning state generation
 
 Autonomous driving simulation pipelines
 
-🛣 Roadmap
+**🛣 Roadmap**
 
 Planned extensions:
 
@@ -202,11 +193,11 @@ Multi-agent RL integration
 
 Safety-critical event mining
 
-📜 License
+**📜 License**
 
 MIT License
 
-💼 How This Looks to Industry
+**💼 How This Looks to Industry**
 
 This repository demonstrates:
 
