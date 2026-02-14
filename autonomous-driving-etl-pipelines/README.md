@@ -1,10 +1,10 @@
-🚗 Autonomous Driving Data Pipelines
+##🚗 Autonomous Driving Data Pipelines
 
 Industry-grade ETL (Extract–Transform–Load) pipelines for perception and multi-sensor research in autonomous systems.
 
 Designed for scalable, reproducible, and production-ready preprocessing of multi-modal sensor data including camera, LiDAR, and trajectory annotations.
 
-📌 Overview
+##📌 Overview
 
 Modern autonomous systems rely on structured, validated, and synchronized multi-sensor data.
 This repository provides modular and extensible data pipelines that convert raw sensor streams into machine learning–ready tensors.
@@ -23,7 +23,7 @@ Dockerized execution
 
 Dataset-agnostic design
 
-## Overview
+****Overview****
 
 This project provides structured and reproducible preprocessing pipelines that convert raw multi-modal sensor data into machine learning–ready tensors.
 
@@ -33,7 +33,7 @@ Extract → Transform → Load
 
 ---
 
-🎯 Supported Research Domains
+##🎯 Supported Research Domains
 1️⃣ Object Detection
 
 Image preprocessing
@@ -89,7 +89,7 @@ Modular components (extractors / transformers / loaders)
 
 Clean API: pipeline.run(...)
 
-⚙ Configuration-Driven Execution
+##⚙ Configuration-Driven Execution
 
 All pipelines are controlled via YAML configuration files:
 
@@ -106,7 +106,7 @@ Parameter versioning
 Dataset switching without code modification
 
 CI-based regression testing
-🧪 Testing
+##🧪 Testing
 
 Unit tests validate:
 
@@ -122,7 +122,7 @@ Run tests with:
 
 pytest tests/
 
-🐳 Docker Support
+##🐳 Docker Support
 
 The project is containerized for reproducible deployment.
 
@@ -135,7 +135,7 @@ Run container:
 
 docker run autonomous-driving-pipelines
 
-📊 Dataset Compatibility
+##📊 Dataset Compatibility
 
 The pipeline design supports integration with:
 
@@ -149,7 +149,7 @@ Simulation outputs (CARLA, MetaDrive)
 
 Dataset-specific adapters can be implemented without modifying core pipeline logic.
 
-🚀 Example Usage
+##🚀 Example Usage
 from src.pipelines.object_detection_pipeline import ObjectDetectionPipeline
 
 config = {"image_size": [640, 384]}
@@ -159,7 +159,7 @@ output = pipeline.run(image)
 
 print(output.shape)
 
-🔒 Engineering Standards
+##🔒 Engineering Standards
 
 This repository follows industry software engineering practices:
 
@@ -177,7 +177,7 @@ Modular architecture
 
 Clear separation between data logic and ML logic
 
-📈 Applications
+##📈 Applications
 
 ADAS perception validation
 
@@ -191,7 +191,7 @@ Multi-Agent Reinforcement Learning state generation
 
 Autonomous driving simulation pipelines
 
-🛣 Roadmap
+##🛣 Roadmap
 
 Planned extensions:
 
@@ -209,11 +209,11 @@ Multi-agent RL integration
 
 Safety-critical event mining
 
-📜 License
+##📜 License
 
 MIT License
 
-💼 How This Looks to Industry
+##💼 How This Looks to Industry
 
 This repository demonstrates:
 
@@ -226,3 +226,4 @@ Autonomous driving domain understanding
 Calibration-safe sensor fusion implementation
 
 Production mindset (Docker + tests + configs)
+
