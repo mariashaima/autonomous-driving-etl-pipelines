@@ -1,0 +1,2 @@
+image_size: [640, 384]
+normalize: true

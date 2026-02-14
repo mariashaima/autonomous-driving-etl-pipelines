@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomous-driving-data-pipelines"
+version = "0.1.0"
+description = "Industry-grade ETL pipelines for object detection, trajectory extraction, and sensor fusion."
+authors = [
+    { name = "Maria", email = "your-email@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "torch>=2.0",
+    "opencv-python>=4.8",
+    "Pillow>=10.0",
+    "pyyaml>=6.0",
+    "loguru>=0.7"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "black",
+    "isort",
+    "flake8",
+    "mypy"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
